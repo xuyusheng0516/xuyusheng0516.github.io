@@ -1,4 +1,7 @@
 /* 公共样式 */
+html{
+    font-size:14px;
+}
 body {
     font-family: "微软雅黑";
     font-size: 14px;
@@ -27,8 +30,11 @@ li{
 img{
     max-width:100%;
 }
+i{
+    font-style: normal;
+}
 
-
+/* 首页开始 */
 /* banner */
 .header_box{
     position: relative;
@@ -240,6 +246,7 @@ img{
     align-items: center;
     background-color:#fff;
     margin-bottom:10px;
+    border-radius:4px;
 }
 .message_div>div:first-child>p:first-child{
     font-size:28px;
@@ -297,4 +304,397 @@ img{
     max-height:26px;
     margin:auto;
 }
+
+/* 首页结束 */
+/* 投资页开始 */
+.touzi_header{
+    height:44px;
+    border-bottom:1px solid #ddd;
+    background-color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:999;
+}
+.touzi_header>div:first-child{
+    margin-right:75px;
+}
+.touzi_header>div>p:nth-child(2){
+    height:2px;
+    text-align: center;
+    position: relative;
+    top:-2px;
+}
+.touzi_header>div>p>span{
+    display:inline-block;
+    width:20px;
+    height:2px;
+    background-color:#075bd9;
+}
+.touzi_header>div>p>a{
+    font-size:16px;
+}
+.touzi_header>div:first-child>p:first-child>a{
+    color:#075bd9;
+}
+.touzi_header>div:nth-child(2)>p:nth-child(2)>span{
+    background-color:transparent;
+}
+/* 小横条 */
+.extract_div{
+    height:25px;
+    line-height:25px;
+    background-color: #dfe7f2;
+    display:flex;
+    overflow: hidden;
+    margin-top:45px;
+}
+.extract_div>span:nth-child(2){
+    font-size:12px;
+}
+.extract_div>span{
+    display:inline-block;
+}
+.extract_div>span:first-child{
+    margin-left:15%;
+    margin-right:5%;
+}
+
+/* 新手专区 */
+.new_hand_box{
+    margin-top:17px;
+}
+
+.new_hand_title{
+    border-bottom:1px solid #000;
+    margin-bottom:12px;
+    padding-left:2.5%;
+}
+.new_hand_title>span:first-child{
+    display:inline-block;
+    margin-right:10px;
+    font-size:16px;
+    color:#075bd9;
+    font-weight:bold;
+}
+
+/* 滑动 */
+.wrapper01 {
+    position: relative;
+    height:120px;
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;   
+}
+
+.wrapper01 .scroller {
+    position: absolute;
+}
+
+.wrapper01 .scroller li {
+    height:120px;
+    float: left;
+    text-align: center;
+}
+
+.wrapper01 .scroller li a {
+    display: block;
+    width:230px;
+    height:120px;
+    background-color:#fff; 
+    padding:12px;
+    box-shadow: 0 0 5px #ccc;
+    box-sizing: border-box;
+    border-radius:12px;
+}
+.wrapper01 .scroller li:not(:first-child)>a{
+    margin-left:12px;
+}
+
+.scroller_li>a>div:first-child{
+    display:flex;
+    align-items: center;
+}
+.scroller_li>a>div:first-child>div:first-child{
+    border-right:1px solid #ddd;
+    padding-right:14px;
+}
+.scroller_li>a>div:first-child>div:nth-child(2){
+    padding-left:14px;
+}
+.top_div>div:first-child>p:first-child{
+    font-size:28px;
+    color: #f58d26;
+}
+.top_div>div:first-child>p:nth-child(2){
+    font-size:12px;
+}
+.top_div>div:nth-child(2)>p:first-child {
+    font-size:16px;
+    color:#000;
+    margin-bottom:10px;
+}
+.top_div>div:nth-child(2)>p:nth-child(2){
+    font-size:12px;
+}
+.bottom_div{
+    width:130px;
+    height:24px;
+    line-height:24px;
+    color:#fff;
+    background-color:#075bd9;
+    border-radius:25px;
+    text-align: center;
+    margin:auto;
+    margin-top:15px;
+}
+
+/* 热门推荐 */
+.touzi_hot_div{
+    margin-top:17px;
+    margin-bottom:84px;
+}
+/* 内容 */
+.touzi_hot_content{
+    background-color:#fff;
+    box-shadow: 0 0 5px #ccc;
+    box-sizing: border-box;
+    border-radius:12px;
+    width:95%;
+    margin:auto;
+    padding:12px;
+    margin-bottom:14px;
+}
+.touzi_hot_content>a{
+    display:inline-block;
+    width:100%;
+}
+.touzi_hot_content>a>p:first-of-type{
+    font-size:16px;
+    font-weight:bold;
+    color:#000;
+}
+
+.touzi_hot_line{
+    display:flex;
+    justify-content: space-between;
+}
+
+.touzi_hot_data{
+    display:flex;
+    align-items: center;
+    margin-top:10px;
+
+}
+.touzi_hot_data>div:first-child{
+    padding-right:20px;
+    border-right:1px solid #ddd;
+}
+.touzi_hot_data>div:nth-child(2){
+    padding-left:20px;
+}
+.touzi_hot_data>div:first-child>p:first-child{
+    font-size:28px;
+    color:#f58d26;
+}
+.touzi_hot_data>div:first-child>p:nth-child(2){
+    font-size:12px;
+}
+.touzi_hot_data>div:nth-child(2)>p:first-child{
+    font-size:16px;
+    color:#000;
+    margin-bottom:10px;
+}
+.touzi_hot_data>div:first-child>p:first-child>span{
+    font-size:12px;
+    position: relative;
+    top:-10px;
+}
+@media(max-width:350px){
+    .touzi_hot_data>div:first-child{
+        padding-right:7px;
+    }
+    .touzi_hot_data>div:nth-child(2){
+        padding-left:7px;
+    }
+}
+
+/* 投资页结束 */
+
+/* 我的页面开始 */
+/* header */
+.myself_header{
+    height:44px;
+    background-color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left:2.5%;
+    padding-right:2.5%;
+}
+.myself_header>div:first-child{
+    display:flex;
+    align-items: center;
+}
+.myself_header>div:first-child>img{
+    max-width:35px;
+    margin-right:12px;
+}
+.myself_header>div:first-child>span{
+    color:#000;
+}
+.myself_header>div:nth-child(2)>a{
+    display:inline-block;
+    width:70px;
+    height:25px;
+    color:#fff;
+    background-color:#075bd9;
+    text-align: center;
+    line-height:25px;
+    border-radius:10px;
+    font-size:12px;
+}
+/* 总资产 */
+.myself_money{
+    background-color:#075bd9;
+    width:95%;
+    margin:auto;
+    box-sizing: border-box;
+    padding:12px;
+    border-radius:10px;
+    margin-top:15px;
+}
+.myself_money>a{
+    display:inline-block;
+    width:100%;
+    color:#fff;
+}
+
+.myself_money>a>p{
+    font-size:16px;
+    margin-bottom:12px;
+}
+
+.myself_num{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.myself_num>div:nth-child(2)>img{
+    max-width:30px;
+}
+.myself_num>div:first-child>p:first-child{
+    margin-bottom:12px;
+}
+.myself_num>div:first-child>p:first-child>span:first-child{
+    font-size:16px;
+    font-weight:bold;
+    display:inline-block;
+    margin-right:8px;
+}
+
+.myself_num>div:first-child>p:nth-child(2){
+    font-size:12px;
+}
+.myself_num>div:first-child>p:nth-child(2)>span:first-child{
+    display:inline-block;
+    padding-right:12px;
+    border-right:1px solid #fff;
+}
+.myself_num>div:first-child>p:nth-child(2)>span:nth-child(2){
+    display:inline-block;
+    padding-left:12px;
+}
+@media (max-width:350px){
+    .myself_num>div:first-child>p:nth-child(2)>span:first-child{
+        display:block;
+        padding-right:0px;
+        border-right:0px;
+    }
+    .myself_num>div:first-child>p:nth-child(2)>span:nth-child(2){
+        display:block;
+        padding-left:0px;
+    }
+}
+/* 我的出借  联系我们  帮助中心 */
+.myself_module_nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.myself_module_nav>div>a{
+    display:inline-block;
+    width:100%;
+}
+.myself_module_nav>div>a>img{
+    max-width:40px;
+}
+.myself_module_nav>div>a>p{
+    margin-top:5px;
+    color:#000;
+}
+/* 栏目 */
+.lanmu_container{
+    width:95%;
+    margin:auto;
+    margin-bottom:85px;
+
+}
+.lanmu_box{
+    margin-bottom:15px;
+}
+.lanmu_color{
+    color:#075bd9;
+    font-size:16px;
+    font-weight:bold;
+}
+.lanmu_p>a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:40px;
+    border-bottom:1px solid #ddd;
+    
+}
+.lanmu_p>a>span:nth-child(2){
+    display:flex;
+    align-items: center;
+    font-size:12px;
+}
+.lanmu_p>a>span:nth-child(2)>i{
+    color:#f58d26;
+    display:inline-block;
+    margin-right:10px;
+}
+.lanmu_p>a>span:nth-child(2)>img{
+    max-height:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 我的页面结束 */
+
 
