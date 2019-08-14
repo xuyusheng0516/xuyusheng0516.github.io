@@ -702,6 +702,10 @@ i{
 .all_html_header>div:nth-child(2){
     margin:auto;
 }
+.all_html_header>div:nth-child(2)>p{
+    font-size:18px;
+    color:#fff;
+}
 .head_ul{
     display:flex;
     height:30px;
@@ -824,7 +828,7 @@ i{
     display:inline-block;
     color:#fff;
     background-color:#f58d26;
-    padding:0 4px;
+    padding:2px 5px;
     margin-right:6px;
 }
 .actual_item p{
@@ -839,7 +843,7 @@ i{
     margin-bottom:5px;
 }
 .actual_item>div>p>i{
-    font-size:18px;
+    font-size:16px;
 }
 .margin_p{
     margin-top:10px;
@@ -869,13 +873,184 @@ i{
     display:none;
 }
 
-
-
-
 /* 资金安全  专业风控  实力平台   结束*/
 
 
 
+
+/* 固收专享页开始 （产品详情页）*/
+.touzi_product_border>div{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    padding:15px 10px;
+    background-color:#fff;
+}
+.touzi_product_border>div:first-child{
+    margin-bottom:15px;
+}
+.touzi_product_div1>h2{
+    font-size:30px;
+    text-align: center;
+    color:#f58d26;
+    font-weight:normal;
+    margin-bottom:5px;
+}
+.touzi_product_div1>h3{
+    text-align: center;
+    margin-bottom:10px;
+}
+.ul_list_box{
+    display:flex;
+    justify-content: center;
+}
+.ul_list_box>li{
+    /* width:24%; */
+    flex-grow: 1;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    text-align: center;
+    padding:10px 0;
+}
+.ul_list_box>li:not(:last-child){
+    margin-right:15px;
+}
+.ul_list_box>li>p:first-child{
+    color:#075bd9;
+    margin-bottom:5px;
+}
+.touzi_product_div1>p{
+    text-align: center;
+    margin-top:10px;
+}
+/* --- */
+.touzi_product_div2>h3{
+    text-align: center;
+    color:#075bd9;
+    margin-bottom:10px;
+}
+.touzi_product_div2>ul>li:not(:last-child){
+    margin-bottom:5px;
+}
+.touzi_product_div2>ul>li{
+    font-size:12px;
+    text-align: center;
+}
+.touzi_product_div2>ul>li>span:not(:last-child){
+    display:inline-block;
+    margin-right:5px;
+}
+.touzi_product_div2>p{
+    text-align:center;
+    margin-top:10px;
+}
+.touzi_product_div2>p>a{
+    color:#f58d26;
+}
+/* 三小图 */
+.touzi_pro_tp{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.touzi_pro_tp p{
+    font-size:12px;
+}
+.touzi_pro_tp p img{
+    max-width:50px;
+}
+.touzi_pro_tp>div>p:first-child{
+    margin-bottom:5px;
+}
+/* 列表 */
+.touzi_pro_list{
+    margin-bottom:54px;
+}
+
+.touzi_pro_wz{
+    margin-top:5px;
+}
+/* 立即借出（底部）  */
+.all_html_bottom{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:#075bd9;
+}
+.all_html_bottom>p>a{
+    display:inline-block;
+    color:#fff;
+    font-size:20px;
+    height:44px;
+    width:100%;
+    line-height:44px;
+    text-align: center;
+}
+
+
+/* 固收专享页结束 （产品详情页）*/
+
+
+/* 借币信息页开始 */
+/* 文字部分 */
+.touzi_jiebi_wz>p{
+    font-size:12px;
+}
+/* 借币信息 */
+.touzi_jiebi_message{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.touzi_jiebi_message>div{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    padding:15px 10px;
+    background-color:#fff;
+}
+.touzi_jiebi_message>h3{
+    font-size:16px;
+    color:#075bd9;
+    margin-bottom:10px;
+}
+.touzi_jiebi_content>p{
+    margin-bottom:10px;
+    font-size:16px;
+    color:#000;
+}
+/* --- */
+.touzi_jiebi_message_list>li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+.touzi_jiebi_message_list>li>p:nth-child(2){
+    max-width:55%;
+    color:#075bd9;
+    font-size:12px;
+    text-align: right;
+}
+
+/* --- */
+.tp_coll{
+    text-align: center;
+    margin-top:10px;
+}
+.tp_coll img{
+    max-width:30px;
+}
+.touzi_jiebi_message>.touzi_jiebi_content:not(:last-child){
+    margin-bottom:15px;
+}
+
+
+
+
+/* 借币信息页结束 */
 
 
 
