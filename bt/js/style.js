@@ -51,9 +51,7 @@ $(function () {
                 }
             });
             if (len == 6) {
-                // setTimeout(function () {
-                //     $(".loading_box").css("display", "block");
-                // }, 400);
+                //
             }
         });
     }
@@ -66,6 +64,20 @@ $(function () {
     $(".paying_box").on("click", function () {
         $(".paying_box,.mask_container").css("display", "none");
 
+    });
+
+    //充币and提币切换
+    $(".get_set_t p").on("click",function(){
+        var getSetIndex=$(this).index();
+        $(this).css({
+            "color":"#075bd9",
+            "border-bottom":"2px solid #075bd9"
+        }).siblings().css({
+            "color":"#000",
+            "border-bottom":"2px solid transparent"
+        });
+        $(".get_set_change_box>div").eq(getSetIndex).css("display","block").siblings().css("display","none");
+        $(".wz_bott>div").eq(getSetIndex).css("display","block").siblings().css("display","none");
     })
 
 

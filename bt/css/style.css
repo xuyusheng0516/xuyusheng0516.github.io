@@ -706,6 +706,9 @@ i{
     font-size:18px;
     color:#fff;
 }
+.all_html_header>div:nth-child(3) a{
+    color:#fff;
+}
 .head_ul{
     display:flex;
     height:30px;
@@ -989,7 +992,10 @@ i{
     line-height:44px;
     text-align: center;
 }
-
+/* ---------------- */
+.get_m,.set_wz{
+    display:none;
+}
 
 /* 固收专享页结束 （产品详情页）*/
 
@@ -1222,20 +1228,211 @@ i{
     display:none;
 }
 
-
-
-
-
-
-
-
-
-
 /* 投资详情页结束 */
 
 
+/* 资产账户页开始 */
+/* 资金 */
+.my_account_money{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    padding:15px 10px;
+    background-color:#fff;
+    margin-bottom:10px;
+}
+.my_account_money>p{
+    text-align: center;
+}
+.my_account_money>p:first-child{
+    margin-bottom:5px;
+}
+.my_account_money>p:first-child img{
+    max-width:50px;
+}
+.my_account_money>p:nth-child(3){
+    margin-top:10px;
+}
+.my_account_money>p:nth-child(3)>span:first-child{
+    display:inline-block;
+    margin-right:5px;
+    font-size:18px;
+    color:#f58d26;
+}
+.my_account_money>p:nth-child(3)>span:nth-child(2){
+    font-size:12px;
+}
+/* --- */
+.my_account_btc{
+    display:flex;
+    margin-top:15px;
+}
+.my_account_btc>div{
+    width:50%;
+    text-align: center;
+}
+.my_account_btc>div>p:first-child{
+    color:#000;
+    margin-bottom:5px;
+}
+.my_account_btc>div>p:nth-child(2){
+    color:#f58d26;
+}
+
+.my_account_btc>div:first-child{
+    border-right:1px solid #ddd;
+}
+/* 已获收益 */
+.already_money{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    padding:10px 10px;
+    background-color:#fff;
+    margin-bottom:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.already_money>p:first-child{
+    color:#000;
+}
+.already_money>p:nth-child(2){
+    color:#f58d26
+}
+
+/* 充币and提币 */
+.get_set_border{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    background-color:#fff;
+}
+/* -- */
+.get_set_t{
+    display:flex;
+    border-bottom:1px solid #000;
+    padding-top:10px;
+    justify-content: center;
+}
+.get_set_t>p{
+    padding-bottom:5px;
+    font-size:16px;
+    border-bottom:2px solid transparent;
+    font-weight:bold;
+    
+}
+.get_set_t>p:first-child{
+    border-bottom:2px solid #075bd9;
+    margin-right:20%;
+    color:#075bd9;
+}
+/* 充币 */
+.set_m{
+    text-align: center;
+    padding:20px 5px;
+}
+.set_m>p:not(:last-child){
+    margin-bottom:10px;
+}
+/* 温馨提示(充币) */
+.get_wz{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.get_wz>p:first-child{
+    margin-bottom:10px;
+}
+.get_wz>p:nth-child(2){
+    font-size:12px;
+}
+/* 提币 */
+.get_m{
+    padding:5px 10px;
+}
+
+.get_m>div,.get_m>p{
+    padding:5px;
+}
+.get_m>div{
+    display:flex;
+    justify-content: space-between;
+}
+.get_m>div>p:nth-child(2){
+    border:1px solid #075bd9;
+    border-radius:5px;
+}
+.get_m>div>p:nth-child(2)>a{
+    font-size:12px;
+    display:inline-block;
+    padding:2px 5px;
+}
+.get_m>div>p:nth-child(2)>a:first-child{
+    color:#FFF;
+    background-color:#075bd9;
+}
+.get_pp{
+    display:flex;
+    justify-content: space-between;
+}
+.get_m>p:first-of-type{
+    border-bottom:1px solid #ddd;
+}
+.get_m>p:first-of-type img{
+    width:16px;
+    height:16px;
+}
+
+.get_m>p:nth-of-type(2) input,.get_m>p:nth-of-type(3) input{
+    border:0px;
+    outline: none;
+    margin-left:15px;
+}
+
+.get_m>p:nth-of-type(2){
+    border-bottom:1px solid #ddd;
+}
+.color_orange{
+    color:#f58d26;
+}
+/* 温馨提示（提币） */
+.set_wz{
+    margin-top:30px;
+    margin-bottom:74px;
+}
+.set_wz>p:first-of-type{
+    margin-bottom:10px;
+}
+.set_wz>p:nth-of-type(2){
+    font-size:12px;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 资产账户页结束 */
 
 
 
