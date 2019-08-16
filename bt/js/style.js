@@ -78,7 +78,19 @@ $(function () {
         });
         $(".get_set_change_box>div").eq(getSetIndex).css("display","block").siblings().css("display","none");
         $(".wz_bott>div").eq(getSetIndex).css("display","block").siblings().css("display","none");
-    })
+    });
+    //我的出借  持有中  已结束
+    $(".my_chujie_t p").on("click",function(){
+        var myChujieIndex=$(this).index();
+        $(this).css({
+            "color":"#075bd9",
+            "border-bottom":"2px solid #075bd9"
+        }).siblings().css({
+            "color":"#000",
+            "border-bottom":"2px solid transparent"
+        });
+        $(".my_chujie_c>div").eq(myChujieIndex).css("display","block").siblings().css("display","none");
+    });
 
 
 
