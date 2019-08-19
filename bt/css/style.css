@@ -1610,32 +1610,193 @@ i{
 
 
 /* 邀请收益页开始 */
+.income_fans,.income_fans_list{
+    display:none;
+}
+.income_border{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:20px;
+    background-color:#fff;
+    padding:15px 0px;
+}
+.income_title{
+    display:flex;
+    justify-content: space-around;
+    border-bottom:1px solid #ddd;
+}
+.income_title>p{
+    border-bottom:2px solid transparent;
+    padding-bottom:10px;
+    font-size:16px;
+    color:#000;
+}
+.income_title>p:first-child{
+    color:#075bd9;
+    border-bottom:2px solid #075bd9;
+}
+.income_award_div1{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:15px;
+    font-size:16px;
+}
+.income_award_div1>p:first-child{
+    color:#000;
+}
+.income_award_div1>p:nth-child(2){
+    color:#f58d26;
+    margin-top:5px;
+}
+/* -------- */
+.income_award_div2{
+    display:flex;
+}
+.income_award_div2>div{
+    flex-grow:1;
+    text-align: center;
+}
+.income_award_div2>div:first-child{
+    border-right:1px solid #ddd;
+}
+.income_award_div2>div>p:first-child{
+    color:#000;
+    margin-bottom:3px;
+}
+.income_award_div2>div>p:nth-child(2){
+    font-size:12px;
+    color:#f58d26;
+}
+/* ------------ */
+.income_rules{
+    margin-bottom:20px;
+}
+.income_rules>h3{
+    text-align: center;
+    font-size:16px;
+    font-weight:normal;
+    margin-bottom:10px;
+}
+.income_rules>p{
+    font-size:12px;
+    margin-bottom:5px;
+    display: flex;
+}
+.income_rules>p>i{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background-color:#f58d26;
+    border-radius:50%;
+    flex-shrink: 0;
+}
+.income_rules>p>span{
+    display:inline-block;
+    margin-left:5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* --------- */
+.income_fans>div{
+    display:flex;
+    justify-content: space-around;
+    margin-top:15px;
+}
+.income_fans>div>div>p:first-child{
+    color:#f58d26;
+    padding:3px 10px;
+    border:1px solid #f58d26;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.income_fans>div>div>p:nth-child(2){
+    color:#fff;
+    background-color:#f58d26;
+    padding:3px 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+/* ------ */
+.income_fans_list>h3{
+    text-align: center;
+    font-weight:normal;
+    color:#075bd9;
+    margin-bottom:10px;
+    font-size:16px;
+}
+.income_fans_list>ul{
+    margin-bottom:15px;
+}
+.income_fans_list>ul>li{
+    display:flex;
+    justify-content: space-between;
+    border-bottom:1px solid #ddd;
+    padding:10px 0px;
+    color:#000;
+}
 
 /* 邀请收益页结束 */
 
+/* 邀请好友页开始 */
+.invite_friends_k1,.invite_friends_k2{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:10px;
+    background-color:#fff;
+    padding:15px 0px;
+}
+.invite_friends_k2{
+    margin-bottom:54px;
+}
+.invite_friends_k1{
+    text-align: center;
+}
+.invite_friends_k1>p:first-child,.invite_friends_k1>p:nth-child(3){
+    font-size:16px;
+    color:#075bd9;
+}
+.invite_friends_k1>p:nth-child(2){
+    margin:15px 0;
+}
+.invite_friends_k1>p:last-child{
+    margin-top:10px;
+}
+.invite_friends_k2>h3{
+    color:#075bd9;
+}
+.invite_friends_k2>p{
+    padding:1px 20px;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 邀请好友页结束 */
 
 
 

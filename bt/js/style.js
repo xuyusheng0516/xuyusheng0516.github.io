@@ -67,29 +67,42 @@ $(function () {
     });
 
     //充币and提币切换
-    $(".get_set_t p").on("click",function(){
-        var getSetIndex=$(this).index();
+    $(".get_set_t p").on("click", function () {
+        var getSetIndex = $(this).index();
         $(this).css({
-            "color":"#075bd9",
-            "border-bottom":"2px solid #075bd9"
+            "color": "#075bd9",
+            "border-bottom": "2px solid #075bd9"
         }).siblings().css({
-            "color":"#000",
-            "border-bottom":"2px solid transparent"
+            "color": "#000",
+            "border-bottom": "2px solid transparent"
         });
-        $(".get_set_change_box>div").eq(getSetIndex).css("display","block").siblings().css("display","none");
-        $(".wz_bott>div").eq(getSetIndex).css("display","block").siblings().css("display","none");
+        $(".get_set_change_box>div").eq(getSetIndex).css("display", "block").siblings().css("display", "none");
+        $(".wz_bott>div").eq(getSetIndex).css("display", "block").siblings().css("display", "none");
     });
     //我的出借  持有中  已结束
-    $(".my_chujie_t p").on("click",function(){
-        var myChujieIndex=$(this).index();
+    $(".my_chujie_t p").on("click", function () {
+        var myChujieIndex = $(this).index();
         $(this).css({
-            "color":"#075bd9",
-            "border-bottom":"2px solid #075bd9"
+            "color": "#075bd9",
+            "border-bottom": "2px solid #075bd9"
         }).siblings().css({
-            "color":"#000",
-            "border-bottom":"2px solid transparent"
+            "color": "#000",
+            "border-bottom": "2px solid transparent"
         });
-        $(".my_chujie_c>div").eq(myChujieIndex).css("display","block").siblings().css("display","none");
+        $(".my_chujie_c>div").eq(myChujieIndex).css("display", "block").siblings().css("display", "none");
+    });
+    //邀请收益  我的奖励  我的粉丝
+    $(".income_title>p").on("click", function () {
+        var incomeIndex = $(this).index();
+        $(this).css({
+            "color": "#075bd9",
+            "border-bottom": "2px solid #075bd9"
+        }).siblings().css({
+            "color": "#000",
+            "border-bottom": "2px solid transparent"
+        });
+        $(".invite_income_k>div").eq(incomeIndex).css("display", "block").siblings().css("display", "none");
+        $(".invite_income_wz>div").eq(incomeIndex).css("display", "block").siblings().css("display", "none");
     });
 
 
