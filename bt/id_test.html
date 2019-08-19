@@ -25,11 +25,28 @@
     </header>
     <!-- 主体部分 -->
     <div class="length_top_lr">
-        <input type="file" accept="image/" capture="camera">
-        <input type="file" accept="video/" capture="camcorder">
-        <input type="file" accept="audio/*" capture="microphone">
-        <input type="file" accept="image/*" multiple>
+        <!-- <input type="file" accept="image/" capture="camera">
+        <input type="file" accept="video/" capture="camcorder"> -->
+        <!-- <input type="file" accept="audio/*" capture="microphone"> -->
+        <!-- <input type="file" accept="image/*" multiple> -->
+
+        <input type="file" name="file" onchange="showPreview(this)" />
+        <img id="portrait" src="" width="70" height="75">
     </div>
+
+    <script>
+        function showPreview(source) {
+            var file = source.files[0];
+            if (window.FileReader) {
+                var fr = new FileReader();
+                fr.onloadend = function (e) {
+                    document.getElementById("portrait").src = e.target.result;
+                    console.log(e);
+                };
+                fr.readAsDataURL(file);
+            }
+        }  
+    </script>
 
 
 
