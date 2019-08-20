@@ -192,6 +192,21 @@ $(function () {
 
 
 
+    //设置doc高度为屏幕的高度
+    $('body').height($('body').clientHeight());
+    var h = $(window).height();
+    //当调整浏览器窗口的大小时，发生 resize 事件
+    $(window).resize(function () {
+        if ($(window).height() < h) {
+            $('.btn_id').hide();
+        }
+        if ($(window).height() >= h) {
+            $('.btn_id').show();
+        }
+    });
+
+
+
 
 
 
