@@ -1918,6 +1918,36 @@ i{
     border-color: transparent;
     outline: none !important;
 }
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.dropdown-menu.open{
+    max-height: 200px !important;
+    overflow: hidden;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right:0;
+    z-index: 1000;
+    min-width: 160px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 身份认证页面结束 */
 
