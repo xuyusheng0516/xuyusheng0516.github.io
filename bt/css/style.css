@@ -1893,9 +1893,9 @@ i{
     color:#fff;
 }
 
-/* .id_form2{
+.id_form2{
     display:none;
-} */
+}
 /* ---select--- */
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 100%;
@@ -1952,15 +1952,16 @@ i{
 }
 
 
-
-
-
-
-
-
-
-
-
+.test_mask{
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform:translate(-50%,75%);
+    color:#fff;
+    padding:3px 10px;
+    background-color:rgba(0, 0, 0, 0.7);
+    display:none;
+}
 
 /* 身份认证页面结束 */
 

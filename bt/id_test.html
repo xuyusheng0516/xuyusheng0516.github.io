@@ -39,16 +39,16 @@
 
         <div class="id_testing_box">
             <!-- 中国大陆地区 -->
-            <!-- <form action="" name="id_form1" class="id_form1">
+            <form action="" name="id_form1" class="id_form1">
                 <div class="id_k_one">
                     <div>
                         <p>姓名</p>
-                        <p><input type="text" name="name_input" placeholder="请输入本人身份证姓名"></p>
+                        <p><input type="text" name="name_input1" placeholder="请输入本人身份证姓名" class="name_input1"></p>
                     </div>
 
                     <div>
                         <p>证件号码</p>
-                        <p><input type="text" name="num_input" placeholder="请输入本人身份证号码"></p>
+                        <p><input type="text" name="num_input1" placeholder="请输入本人身份证号码" class="num_input1"></p>
                     </div>
                 </div>
 
@@ -96,28 +96,28 @@
                 </div>
 
                 <div class="btn_id">
-                    <button type="button">提交</button>
+                    <button type="button" class="China_btn">提交</button>
                 </div>
 
-            </form> -->
+            </form>
 
             <!-- 其他国家及地区 -->
             <form action="" name="id_form2" class="id_form2">
                 <div class="id_k_one">
                     <div>
                         <p>姓名</p>
-                        <p><input type="text" name="name_input" placeholder="请输入本人身份证姓名"></p>
+                        <p><input type="text" name="name_input2" placeholder="请输入本人身份证姓名" class="name_input2"></p>
                     </div>
 
                     <div>
                         <p>证件号码</p>
-                        <p><input type="text" name="num_input" placeholder="请输入本人身份证号码"></p>
+                        <p><input type="text" name="num_input2" placeholder="请输入本人身份证号码" class="num_input2"></p>
                     </div>
 
                     <div>
                         <p>国家/地区</p>
                         <p>
-                            <select class="selectpicker countrypicker"  data-default="China" data-flag="false"></select>
+                            <select class="selectpicker countrypicker"  data-default="China" data-flag="false" name="select_country"></select>
                         </p>
                     </div>
                 </div>
@@ -167,18 +167,17 @@
                 </div>
 
                 <div class="btn_id">
-                    <button type="button">提交</button>
+                    <button type="button" class="country_btn">提交</button>
                 </div>
 
             </form>
 
         </div>
 
-
-
-
-
     </div>
+
+    <!-- 验证弹框 -->
+    <div class="test_mask">姓名不能为空</div>
     <script>
         //身份证上传
         // 正面
