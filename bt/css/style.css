@@ -1906,6 +1906,9 @@ i{
     color:#333333;
     font-size:14px;
 }
+.btn {
+    border-radius:0px;
+}
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
     color: #333333;
     background-color: transparent !important;
@@ -1935,8 +1938,18 @@ i{
     min-width: 160px;
     font-size: 14px;
 }
-
-
+.dropdown-menu li.selected{
+    border:0px !important;
+    background-color: transparent !important;
+    border-color:transparent !important;
+}
+.dropdown-menu>li>a:focus{
+    border:0px !important;
+    border-color:transparent !important;
+    color: #333333;
+    text-decoration: none;
+    background-color: transparent !important;
+}
 
 
 
