@@ -105,6 +105,35 @@ $(function () {
         $(".invite_income_wz>div").eq(incomeIndex).css("display", "block").siblings().css("display", "none");
     });
 
+    // 身份认证  点击上传
+    $(".click_zheng1").on("click",function(){
+        $(".file_zheng1").click();
+    });
+    $(".click_fang1").on("click",function(){
+        $(".file_fang1").click();
+    });
+    $(".click_zheng2").on("click",function(){
+        $(".file_zheng2").click();
+    });
+    $(".click_fang2").on("click",function(){
+        $(".file_fang2").click();
+    });
+
+    $(".id_test_t>p").on("click",function(){
+        var areaIndex=$(this).index();
+        $(this).css({
+            "color":"#fff",
+            "background-color":"#075bd9"
+        }).siblings().css({
+            "color":"#075bd9",
+            "background-color":"transparent"
+        });
+        $(".id_testing_box>form").eq(areaIndex).css("display","block").siblings().css("display","none");
+    });
+    
+
+
+
 
 
 

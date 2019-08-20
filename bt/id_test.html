@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+	<script src="js/countrypicker.min.js"></script>
     <script src="js/style.js"></script>
 </head>
 
@@ -25,31 +32,168 @@
     </header>
     <!-- 主体部分 -->
     <div class="length_top_lr">
-        <!-- <input type="file" accept="image/" capture="camera">
-        <input type="file" accept="video/" capture="camcorder"> -->
-        <!-- <input type="file" accept="audio/*" capture="microphone"> -->
-        <input type="file" accept="image/*" multiple>
-
-        <input type="file" name="file" accept="image/*" onchange="showPreview(this)" multiple/>
-        <img id="portrait" src="" width="70" height="75">
-        <div>
-                2222222222
+        <div class="id_test_t">
+            <p>中国大陆地区</p>
+            <p>其他国家及地区</p>
         </div>
-        
-    </div>
 
+        <div class="id_testing_box">
+            <!-- 中国大陆地区 -->
+            <!-- <form action="" name="id_form1" class="id_form1">
+                <div class="id_k_one">
+                    <div>
+                        <p>姓名</p>
+                        <p><input type="text" name="name_input" placeholder="请输入本人身份证姓名"></p>
+                    </div>
+
+                    <div>
+                        <p>证件号码</p>
+                        <p><input type="text" name="num_input" placeholder="请输入本人身份证号码"></p>
+                    </div>
+                </div>
+
+                <div class="id_k_two">
+                    <div>
+                        <div class="idcard_div">
+                            <p>
+                                <input type="file" name="file_zheng" accept="image/*"
+                                    onchange="showPreview(this,'portrait1')" multiple class="file_zheng1">
+                            </p>
+                            <p>
+                                <img src="img/id_card1.png" id="portrait1">
+                            </p>
+                        </div>
+
+                        <div class="idcard_wz">
+                            <p class="click_zheng1">点击上传</p>
+                            <p>正面</p>
+                            <p>（包含头像的一面）</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="idcard_div">
+                            <p>
+                                <input type="file" name="file_fang" accept="image/*"
+                                    onchange="showPreview(this,'portrait2')" multiple class="file_fang1">
+                            </p>
+                            <p><img src="img/id_card2.png" id="portrait2"></p>
+                        </div>
+
+                        <div class="idcard_wz">
+                            <p class="click_fang1">点击上传</p>
+                            <p>反面</p>
+                            <p>（包含文字的一面）</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="id_test_rules">
+                    <p>请确保证件照片的内容完整并清晰可见，身份证或护照日期必须在有效期内，照片大小不能超过4M。</p>
+                    <p>请确保使用本人真实身份验证，我们会保护您的个人信息安全。 中国大陆用户仅支持身份证验证，其他国家及港澳台仅支持护照验证。</p>
+                </div>
+
+                <div class="btn_id">
+                    <button type="button">提交</button>
+                </div>
+
+            </form> -->
+
+            <!-- 其他国家及地区 -->
+            <form action="" name="id_form2" class="id_form2">
+                <div class="id_k_one">
+                    <div>
+                        <p>姓名</p>
+                        <p><input type="text" name="name_input" placeholder="请输入本人身份证姓名"></p>
+                    </div>
+
+                    <div>
+                        <p>证件号码</p>
+                        <p><input type="text" name="num_input" placeholder="请输入本人身份证号码"></p>
+                    </div>
+
+                    <div>
+                        <p>国家/地区</p>
+                        <p>
+                            <select class="selectpicker countrypicker"  data-flag="false"></select>
+                        </p>
+                    </div>
+                </div>
+                <!-- data-default="China" -->
+                <div class="id_k_two">
+                    <div>
+
+                        <div class="idcard_div">
+                            <p>
+                                <input type="file" name="file_zheng" accept="image/*"
+                                    onchange="showPreview(this,'portrait3')" multiple class="file_zheng2">
+                            </p>
+                            <p>
+                                <img src="img/id_card3.png" id="portrait3">
+                            </p>
+                        </div>
+
+                        <div class="idcard_wz">
+                            <p class="click_zheng2">点击上传</p>
+                            <p>正面</p>
+                            <p>（包含头像的一面）</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="idcard_div">
+                            <p>
+                                <input type="file" name="file_fang" accept="image/*"
+                                    onchange="showPreview(this,'portrait4')" multiple class="file_fang2">
+                            </p>
+                            <p><img src="img/id_card4.png" id="portrait4"></p>
+                        </div>
+
+                        <div class="idcard_wz">
+                            <p class="click_fang2">点击上传</p>
+                            <p>反面</p>
+                            <p>（包含文字的一面）</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="id_test_rules">
+                    <p>请确保证件照片的内容完整并清晰可见，身份证或护照日期必须在有效期内，照片大小不能超过4M。</p>
+                    <p>请确保使用本人真实身份验证，我们会保护您的个人信息安全。 中国大陆用户仅支持身份证验证，其他国家及港澳台仅支持护照验证。</p>
+                </div>
+
+                <div class="btn_id">
+                    <button type="button">提交</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+
+
+    </div>
     <script>
-        function showPreview(source) {
+        //身份证上传
+        // 正面
+        function showPreview(source, img_id) {
             var file = source.files[0];
             if (window.FileReader) {
                 var fr = new FileReader();
                 fr.onloadend = function (e) {
-                    document.getElementById("portrait").src = e.target.result;
-                    console.log(e);
+                    document.getElementById(img_id).src = e.target.result;
+                    // console.log(e);
                 };
                 fr.readAsDataURL(file);
             }
-        }  
+        }
+
     </script>
 
 
