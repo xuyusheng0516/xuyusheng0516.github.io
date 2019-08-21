@@ -1953,7 +1953,7 @@ i{
 
 
 .test_mask{
-    position: absolute;
+    position: fixed;
     top:75%;
     left:50%;
     transform:translate(-50%,75%);
