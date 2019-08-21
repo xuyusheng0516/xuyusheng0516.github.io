@@ -191,6 +191,66 @@ $(function () {
     });
 
 
+    //资金密码修改
+    $(".psw_change_btnbox>button").on("click", function () {
+        var old_psw = $(".old_psw").val();
+        var new_psw = $(".new_psw").val();
+        var confirm_new_psw = $(".confirm_new_psw").val();
+        var psw_test = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/;
+        if (old_psw == "") {
+            $('.test_mask').show().html("密码不能为空");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else if (new_psw == "" || (!psw_test.test(new_psw))) {
+            $('.test_mask').show().html("请输入有效新密码");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else if (confirm_new_psw == "" || new_psw != confirm_new_psw) {
+            $('.test_mask').show().html("两次密码不一致");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        }else{
+            $(".psw_change_btnbox>button").attr("type","submit");
+        }
+    });
+
+
+    //资金密码
+    $(".password_btnbox>button").on("click", function () {
+        var password_in = $(".password_in").val();
+        var password_again = $(".password_again").val();
+        var tel_test_num = $(".tel_test_num").val();
+        if (password_in == "") {
+            $('.test_mask').show().html("密码不能为空");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else if (password_again == "" || password_again != password_in) {
+            $('.test_mask').show().html("两次密码不一致");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        }else if(tel_test_num == ""){
+            $('.test_mask').show().html("手机验证码不能为空");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        }else{
+            $(".password_btnbox>button").attr("type","submit");
+        }
+    });
+
+
+
 
 
 

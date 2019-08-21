@@ -1965,3 +1965,112 @@ i{
 
 /* 身份认证页面结束 */
 
+/* 资金密码页开始（修改） */
+.psw_change_inputbox{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:20px;
+    background-color:#fff;
+    padding:15px;
+}
+.psw_change_inputbox>div:not(:last-child){
+    margin-bottom:10px;
+}
+.psw_change_inputbox>div>p:first-child{
+    color:#075bd9;
+    margin-bottom:4px;
+}
+.psw_change_inputbox>div>p:nth-child(2) input{
+    width:100%;
+    height:34px;
+    border:1px solid #075bd9;
+    outline: none;
+    box-sizing: border-box;
+    padding-left:15px;
+}
+.psw_change_btnbox>button{
+    width:100%;
+    height:44px;
+    font-size:18px;
+    color:#fff;
+    background-color:#075bd9;
+    border:0px;
+    border-radius:10px;
+}
+
+/* 资金密码页结束（修改） */
+
+/* 资金密码页开始 */
+.password_inputbox{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:20px;
+    background-color:#fff;
+    padding:15px;
+}
+.password_inputbox>div:not(:last-child){
+    margin-bottom:10px;
+}
+.password_inputbox>div>p:first-child{
+    color:#075bd9;
+    margin-bottom:4px;
+}
+.password_inputbox>div>p:nth-child(2) input{
+    width:100%;
+    height:34px;
+    border:1px solid #075bd9;
+    outline: none;
+    box-sizing: border-box;
+    padding-left:15px;
+}
+.password_inputbox>div:last-child>p:nth-child(2){
+    display:flex;
+}
+.password_inputbox>div:last-child>p:nth-child(2) input{
+    width:70%;
+}
+.password_inputbox>div:last-child>p:nth-child(2) span{
+    width:30%;
+    color:#fff;
+    background-color:#075bd9;
+    text-align: center;
+    line-height:34px;
+}
+.password_btnbox>button{
+    width:100%;
+    height:44px;
+    font-size:18px;
+    color:#fff;
+    background-color:#075bd9;
+    border:0px;
+    border-radius:10px;
+}
+
+
+/* 资金密码页结束 */
+
+
+/* 设置页开始 */
+.ul_all_listing>li>a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #ddd;
+    padding:10px 0px;
+}
+.ul_all_listing>li>a>p:first-child>span{
+    color:#000;
+}
+.ul_all_listing>li>a>p:first-child img{
+    max-height:20px;
+}
+.ul_all_listing>li>a>p:nth-child(2) img{
+    max-height:20px;
+}
+.ul_all_listing>li>a>p:nth-child(2) span{
+    color:#000;
+}
+
+/* 设置页结束 */
+
+
