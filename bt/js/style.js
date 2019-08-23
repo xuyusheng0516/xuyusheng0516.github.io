@@ -1,4 +1,8 @@
 $(function () {
+    //头部返回
+    $(".all_html_header>div:first-child img").click(function () {
+        window.history.back();
+    });
     // 首页公告
     var num = $(".ul1").find("li").length;
     if (num > 1) {
