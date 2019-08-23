@@ -700,6 +700,9 @@ i{
     padding-right:15px;
     z-index:999;
 }
+.all_html_header>div:first-child img{
+    max-height:20px;
+}
 .all_html_header>div:nth-child(2){
     margin:auto;
 }
@@ -765,7 +768,24 @@ i{
 .safe_first_div>p,.safe_second_div>p,.safe_third_div>p{
     font-size:12px;
 }
-
+.safe_first_div>div>p{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.safe_first_div>div>p span{
+    display:inline-block;
+    width:33.3%;
+}
+.safe_first_div>div>p:first-child{
+    margin-bottom:5px;
+}
+.safe_first_div>div>p img{
+    max-width:28px;
+}
+.safe_second_div div img{
+    max-width:60px;
+}
 /* --- */
 .safe_third_div>div{
     color: #f58d26;
@@ -804,6 +824,9 @@ i{
 .special_first_div>div>p>span{
     display:inline-block;
     width:32px;
+}
+.special_second_div div img,.special_third_div div img{
+    max-width:60px;
 }
 /* 实力平台 */
 .actual_first_div>h3,.actual_second_div>h3,.actual_third_div>h3{
@@ -851,6 +874,9 @@ i{
 }
 .margin_p{
     margin-top:10px;
+}
+.actual_second_div div img{
+    max-width:60px;
 }
 /* -- */
 .intro_ceo{
@@ -1123,6 +1149,9 @@ i{
 .touzi_xq_div2>p i{
     color:#f58d26;
 }
+.touzi_xq_div2>div>p:nth-child(2) img{
+    max-width:25px;
+}
 /* 文字 */
 .touzi_xq_wz{
     font-size:12px;
@@ -1333,6 +1362,17 @@ i{
 .set_m>p:not(:last-child){
     margin-bottom:10px;
 }
+.set_m>p:nth-child(2) img{
+    max-width:80px;
+}
+.set_m>p:nth-child(3) img{
+    max-width:20px;
+}
+.set_m>p:nth-child(3) button{
+    border:none;
+    outline: none;
+    background-color:transparent;
+}
 /* 温馨提示(充币) */
 .get_wz{
     margin-top:30px;
@@ -1432,7 +1472,9 @@ i{
     background-color:#f58d26;
     border-radius:8px;
 }
-
+.address_list>li>div:nth-child(2) img{
+    max-width:20px;
+}
 /* 选择地址页结束 */
 
 /* 资产明细页开始 */
@@ -1758,6 +1800,9 @@ i{
 .invite_friends_k1>p:nth-child(2){
     margin:15px 0;
 }
+.invite_friends_k1>p:nth-child(2) img{
+    max-width:80px;
+}
 .invite_friends_k1>p:last-child{
     margin-top:10px;
 }
@@ -2046,7 +2091,6 @@ i{
     border-radius:10px;
 }
 
-
 /* 资金密码页结束 */
 
 
@@ -2063,6 +2107,9 @@ i{
 }
 .ul_all_listing>li>a>p:first-child img{
     max-height:20px;
+    position: relative;
+    top:4px;
+    margin-right:5px;
 }
 .ul_all_listing>li>a>p:nth-child(2) img{
     max-height:20px;

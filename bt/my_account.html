@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
     <script src="js/style.js"></script>
 </head>
 
@@ -15,7 +16,7 @@
     <!-- 头部导航 -->
     <header class="all_html_header">
         <div>
-            <img src="img/icon_news.png" alt="">
+            <img src="img/back.png" alt="">
         </div>
 
         <div>
@@ -67,11 +68,13 @@
                     <div class="set_m">
                         <p>向您在Plant Coin的BTC地址汇入完成充值</p>
                         <p>
-                            <img src="img/icon_bt.png" alt="">
+                            <img src="img/money_erweima.png" alt="">
                         </p>
                         <p>
-                            <span>18aGtnsooRloijhjk7EoGXS1H5kAudy35wdk</span>
-                            <img src="img/right.png" alt="">
+                            <span class="linking">18aGtnsooRloijhjk7EoGXS1H5kAudy35wdk</span>
+                            <button class="copying" data-clipboard-action="copy" data-clipboard-target=".linking">
+                                <img src="img/copy.png" alt="">
+                            </button>
                         </p>
                     </div>
                     <!-- 提币 -->
@@ -86,7 +89,7 @@
 
                         <p class="get_pp">
                             <span>提币区块链地址</span>
-                            <a href=""><img src="img/right.png" alt=""></a>
+                            <a href=""><img src="img/address_c.png" alt=""></a>
                         </p>
 
                         <p>
@@ -134,13 +137,24 @@
 
             </div>
 
-
-
-
-
         </div>
+        <!-- 弹框 -->
+        <div class="test_mask">复制成功</div>
 
     </div>
+
+    <script>
+        // 复制
+        var clipboard = new ClipboardJS('.copying');
+        clipboard.on('success', function (e) {
+            // console.log(e);
+            $(".test_mask").css("display", "block");
+            $(".test_mask").html("复制成功");
+            setTimeout(function () {
+                $(".test_mask").css("display", "none");
+            }, 1000)
+        });
+    </script>
 </body>
 
 </html>
