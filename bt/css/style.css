@@ -320,6 +320,9 @@ i{
     right:0;
     z-index:999;
 }
+
+
+
 .touzi_header>div:first-child{
     margin-right:75px;
 }
@@ -333,16 +336,23 @@ i{
     display:inline-block;
     width:20px;
     height:2px;
-    background-color:#075bd9;
+    background-color:transparent;
 }
 .touzi_header>div>p>a{
     font-size:16px;
 }
-.touzi_header>div:first-child>p:first-child>a{
+/* .touzi_header>div:first-child>p:first-child>a{
     color:#075bd9;
-}
+} */
 .touzi_header>div:nth-child(2)>p:nth-child(2)>span{
     background-color:transparent;
+}
+
+.active_touzi>p>span{
+    background-color:#075bd9 !important;
+}
+.active_touzi>p>a{
+    color:#075bd9;
 }
 /* 小横条 */
 .extract_div{
@@ -1073,13 +1083,19 @@ i{
     text-align: center;
     margin-top:10px;
 }
+
 .tp_coll img{
     max-width:30px;
 }
 .touzi_jiebi_message>.touzi_jiebi_content:not(:last-child){
     margin-bottom:15px;
 }
-
+.up_down_bShow{
+    display:none;
+}
+.touzi_jiebi_message>div:first-of-type .up_down_bShow{
+    display:block;
+}
 /* 借币信息页结束 */
 
 /* 投资详情页开始 */
@@ -2119,5 +2135,266 @@ i{
 }
 
 /* 设置页结束 */
+
+/* 登录页开始 */
+/* header */
+.login_register_head{
+    padding-right:15px;
+}
+.login_register_head>p:first-child{
+    text-align: right;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.login_register_head>p:first-child a{
+    color: #3f3fd8;
+}
+.login_register_head>p:nth-child(2){
+    text-align: center;
+}
+.login_register_head>p:nth-child(2) img{
+    max-width: 90px;
+}
+/* 表单 */
+.login_form,.register_form{
+    max-width:275px;
+    margin:auto;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+.login_form>div:not(:last-child),.register_form>div:not(:last-child){
+    margin-bottom:20px;
+}
+
+.login_form>div>div,.register_form>div>div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+.login_form>div>div>p,.register_form>div>div>p{
+    display:flex;
+    align-items: center;
+}
+
+.login_form>div>div>p>span:first-child img,.register_form>div>div>p>span:first-child img{
+    max-width:17px;
+    margin-right:10px;
+}
+.login_form>div>p,.register_form>div>p{
+    border-bottom:1px solid #ddd;
+    padding-bottom:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_form>div>p input,.register_form>div>p input{
+    padding-left:27px;
+    width:80%;
+    border:0px;
+    outline: none;
+    height:30px;
+    background-color:transparent;
+}
+.login_form>div>p>span img,.register_form>div>p>span img{
+    max-width:15px;
+}
+
+.forget_pwd{
+    text-align: right;
+    margin-top:10px;
+}
+.login_btn,.register_btn{
+    margin-top:30px;
+}
+.login_btn button,.register_btn button{
+    width:100%;
+    height:50px;
+    border-radius:25px;
+    color:#fff;
+    font-size:18px;
+    border:0px;
+    outline: none;
+    letter-spacing: 0.7px;
+    background-color: #3f3fd8;
+}
+
+.ma_test{
+    background-color: #3f3fd8;
+    border-radius: 4px;
+    color:#fff;
+    font-size:12px;
+    padding:3px 8px;
+}
+/* 登录页结束 */
+
+/* 注册页开始 */
+.register_bott{
+    margin-top:10px;
+    text-align: center;
+    font-size:12px;
+    color: #3f3fd8;
+}
+.register_bott a{
+    color:#3f3fd8;
+}
+/* 注册页结束 */
+
+
+
+/* 找回密码页开始 */
+.find_pwd>div{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:15px;
+    background-color:#fff;
+}
+.find_pwd>div>div{
+    height:45px;
+    line-height:45px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 15px;
+}
+.find_pwd>div>div:not(:last-child){
+    border-bottom:1px solid #ddd;
+}
+
+.find_pwd>div>div input{
+    border:0px;
+    outline: none;
+}
+.find_pwd>div>div span{
+    color:#fff;
+    background-color:#075bd9;
+    padding:3px 8px;
+}
+.find_pwd_next{
+    margin-top:30px;
+}
+.find_pwd_next a{
+    display:inline-block;
+    width:100%;
+    height: 40px;
+    color:#fff;
+    font-size:18px;
+	background-color: #075bd9;
+    border-radius: 40px;
+    text-align: center;
+    line-height:40px;
+}
+/* ---------------------- */
+.find_pwd_next>div{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:30px;
+    background-color:#fff;
+    height:45px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 15px;
+}
+
+.find_pwd_next>div input{
+    width:80%;
+    outline: none;
+    border:0;
+}
+.find_pwd_next>div img{
+    max-width:15px;
+}
+
+.find_pwd_finished button{
+    height:40px;
+    width:100%;
+    border:0px;
+    outline: none;
+    color:#fff;
+    background-color:#075bd9;
+    font-size:18px;
+    border-radius: 40px;
+}
+
+
+/* 找回密码页结束 */
+
+.touzi_celue_box{
+    margin-bottom:65px;
+}
+
+
+
+
+/* 银行都想要的精选优质资产 */
+.touzi_bank_div{
+    margin-bottom:30px;
+}
+.touzi_bank_div>ul{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:15px;
+    background-color:#fff;
+    padding:15px 10px;
+}
+.touzi_bank_div>ul>li:not(:last-child){
+    margin-bottom:5px;
+}
+.touzi_bank_div>ul>li{
+    font-size:12px;
+    text-align: center;
+}
+.touzi_bank_div>ul>li>span:not(:last-child){
+    display:inline-block;
+    margin-right:5px;
+}
+
+
+
+/* 协议范本  风险提示 帮助中心*/
+.danger_box,.help_user_box,.xieyi_book_box,.help_pt_box{
+    box-shadow: 0px 4px 10px 0.7px rgba(7, 0, 2, 0.2);
+    border-radius:10px;
+    margin-bottom:15px;
+    background-color:#fff;
+    padding:15px 10px;
+}
+
+
+/* --------------------------------------------------------------- */
+.all_mask_box{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index:999999;
+    display:none;
+}
+
+.all_mask_div{
+    width:80%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:15px 10px;
+}
+.all_mask_wz{
+    text-align: center;
+}
+
+.all_mask_wz>p:first-child{
+    color: #2452ae;
+    margin-bottom:10px;
+}
+
+
+
+
 
 

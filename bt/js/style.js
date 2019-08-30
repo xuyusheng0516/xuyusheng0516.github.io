@@ -3,6 +3,128 @@ $(function () {
     $(".all_html_header>div:first-child img").click(function () {
         window.history.back();
     });
+
+    // 登录------------------------
+    // 点击显示隐藏密码
+    $(".pwd_hide_show img").on("click", function () {
+        if ($(this).attr("src") == "img/hide.png") {
+            $(this).attr("src", "img/show.png");
+            $(this).parent().siblings().attr("type", "text");
+        } else {
+            $(this).attr("src", "img/hide.png");
+            $(this).parent().siblings().attr("type", "password");
+        }
+    });
+    // 验证
+    function loginTest() {
+        let login_tel = $(".login_tel").val();
+        let login_pwd = $(".login_pwd").val();
+        let tel_rule = /^1(3|4|5|7|8)\d{9}$/;
+        if (login_tel == "" || (!tel_rule.test(login_tel))) {
+            $('.test_mask').show().html("请输入有效手机号");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else if (login_pwd == "") {
+            $('.test_mask').show().html("请输入有效密码");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else {
+            $(".login_btn button").attr("type", "submit");
+        }
+    }
+    $(".login_btn button").on("click", function () {
+        loginTest();
+    });
+
+
+    // 注册------------------------
+    // 验证
+    function registerTest() {
+        let register_tel = $(".register_tel").val();
+        let register_pwd = $(".register_pwd").val();
+        let register_msg = $(".register_msg").val();
+        let tel_rule = /^1(3|4|5|7|8)\d{9}$/;
+        let register_msg_rule = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/;
+        if (register_tel == "" || (!tel_rule.test(register_tel))) {
+            $('.test_mask').show().html("请输入有效手机号");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else if (register_msg == "") {
+            $('.test_mask').show().html("请输入有效验证码");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else if (register_pwd == "" || (!register_msg_rule.test(register_pwd))) {
+            $('.test_mask').show().html("请输入有效密码");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else {
+            $(".register_btn button").attr("type", "submit");
+        }
+
+    }
+
+    $(".register_btn button").on("click", function () {
+        registerTest();
+    });
+
+
+
+    //找回密码
+    function findPassword() {
+        let find_tel = $(".find_tel").val();
+        let find_msg = $(".find_msg").val();
+        let tel_rule = /^1(3|4|5|7|8)\d{9}$/;
+        if (find_tel == "" || (!tel_rule.test(find_tel))) {
+            $('.test_mask').show().html("请输入有效手机号");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else if (find_msg == "") {
+            $('.test_mask').show().html("请输入有效验证码");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        } else {
+            $(".find_pwd_next a").attr("href", "find_password_next.html");
+        }
+    }
+
+    $(".find_pwd_next a").on("click", function () {
+        findPassword();
+    });
+
+
+
+    function findPasswordFinished(){
+        let find2_pwd = $(".find2_pwd").val();
+        let find2_pwd_rule = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/;
+        if(find2_pwd=="" ||(!find2_pwd_rule.test(find2_pwd))){
+            $('.test_mask').show().html("请输入有效密码");
+            setTimeout(function () {
+                $('.test_mask').hide();
+            }, 1200);
+            return false;
+        }else{
+            $(".find_pwd_finished button").attr("type", "submit");
+        }
+    }
+    $(".find_pwd_finished button").on("click",function(){
+        findPasswordFinished();
+    })
+
+
     // 首页公告
     var num = $(".ul1").find("li").length;
     if (num > 1) {
@@ -219,8 +341,8 @@ $(function () {
                 $('.test_mask').hide();
             }, 1200);
             return false;
-        }else{
-            $(".psw_change_btnbox>button").attr("type","submit");
+        } else {
+            $(".psw_change_btnbox>button").attr("type", "submit");
         }
     });
 
@@ -242,28 +364,45 @@ $(function () {
                 $('.test_mask').hide();
             }, 1200);
             return false;
-        }else if(tel_test_num == ""){
+        } else if (tel_test_num == "") {
             $('.test_mask').show().html("手机验证码不能为空");
             setTimeout(function () {
                 $('.test_mask').hide();
             }, 1200);
             return false;
-        }else{
-            $(".password_btnbox>button").attr("type","submit");
+        } else {
+            $(".password_btnbox>button").attr("type", "submit");
         }
     });
 
 
+    //借币信息点击收缩
+    $(".tp_coll  img").on("click", function () {
+        let $item = $(this).parent().parent().siblings('.up_down_bShow');
+        if ($item.is(":hidden")) {
+            $(this).attr("src", "img/coll.png");
+        } else {
+            $(this).attr("src", "img/coll_down.png");
+        }
+        $item.slideToggle();
+    });
+
+    // 固收专享开关
+    $(".on_off img").on("click", function () {
+        if ($(this).attr('src') == 'img/open.png') {
+            $(this).attr('src', 'img/close.png');
+        } else {
+            $(this).attr('src', 'img/open.png');
+        }
+    });
 
 
-
-
-
-
-
-
-
-
-
+    // 点击版本更新出现弹框
+    $(".ul_all_listing li:first-child a").on("click",function(){
+        $(".all_mask_box").css("display","block");
+        setTimeout(function(){
+            $(".all_mask_box").css("display","none");
+        },1200)
+    });
 
 });

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+
+<body>
+    <header class="login_register_head">
+        <p>
+            <a href="register.html">注册</a>
+        </p>
+        <p>
+            <img src="img/logo.png" alt="">
+        </p>
+    </header>
+
+    <form action="" name="login_form" class="login_form">
+        <div>
+            <div>
+                <p>
+                    <span><img src="img/icon_phone.png" alt=""></span>
+                    <span>手机</span>
+                </p>
+            </div>
+            <p><input type="text" placeholder="请输入手机号" name="login_tel" class="login_tel"></p>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    <span><img src="img/icon_pwd.png" alt=""></span>
+                    <span>密码</span>
+                </p>
+            </div>
+            <p>
+                <input type="password" placeholder="请输入密码" name="login_pwd" class="login_pwd">
+                <span class="pwd_hide_show"><img src="img/hide.png" alt=""></span>
+            </p>
+        </div>
+
+        <p class="forget_pwd"><a href="find_password.html">忘记密码？</a></p>
+
+        <p class="login_btn"><button type="button">登录</button></p>
+    </form>
+
+
+    <!-- 验证弹框 -->
+    <div class="test_mask">请输入有效手机号</div>
+</body>
+
+</html>

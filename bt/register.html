@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+
+<body>
+    <header class="login_register_head">
+        <p>
+            <a href="login.html">登录</a>
+        </p>
+        <p>
+            <img src="img/logo.png" alt="">
+        </p>
+    </header>
+
+    <form action="" name="login_form" class="register_form">
+
+        <div>
+            <div>
+                <p>
+                    <span><img src="img/icon_phone.png" alt=""></span>
+                    <span>手机</span>
+                </p>
+            </div>
+            <p><input type="text" placeholder="请输入手机号" name="register_tel" class="register_tel"></p>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    <span><img src="img/ma_yanzheng.png" alt=""></span>
+                    <span>验证码</span>
+                </p>
+                <p class="ma_test">发送验证码</p>
+            </div>
+            <p><input type="text" placeholder="请输入六位短信验证码" name="register_msg" class="register_msg"></p>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    <span><img src="img/icon_pwd.png" alt=""></span>
+                    <span>密码</span>
+                </p>
+            </div>
+            <p>
+                <input type="password" placeholder="请设置密码(字母+数字不少于6位)" name="register_pwd" class="register_pwd">
+                <span class="pwd_hide_show"><img src="img/hide.png" alt=""></span>
+            </p>
+        </div>
+
+        <p class="register_btn"><button type="button">确认注册</button></p>
+
+        <p class="register_bott">
+            <span>已有账号？</span>
+            <a href="login.html">去登录</a>
+        </p>
+    </form>
+
+    <!-- 验证弹框 -->
+    <div class="test_mask">请输入有效手机号</div>
+</body>
+
+
+</html>
